@@ -188,7 +188,7 @@ public class Main {
     }
 
     // A program that constructs all the possible combinations from the given alphabet, and compares it with ciphertext
-    // Length interval is given, standard parameters are startLength = 0 (inclusive), stopLength = ciphertext.length() (exclusive)
+    // Length interval is given, parameters: startLength = 0 (inclusive), stopLength = ciphertext.length() (exclusive)
     public static void bruteForce(String alphabetInput, String cipherTextInput, int startLength, int stopLength){
     	
         if( (alphabetInput.length() == 0) || (cipherTextInput.length() == 0) ){
@@ -257,7 +257,7 @@ public class Main {
 
     	// bruteForce(String alphabet, String ciphertext, int startLength, int stopLength)
     	// startLength is inclusive, stopLength is exclusive
-    	// Generate all possible Strings, until ddddd is generated.
+    	// Generate all possible Strings with the alphabet "abcd", until ddddd is generated.
     	bruteForce( "abcd", "ddddd", 1, 7 ); 
     }
 
